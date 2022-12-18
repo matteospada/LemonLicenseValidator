@@ -13,15 +13,33 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            HStack {
+            VStack {
                 TextField("Insert your license key", text: $vm.license)
-                Button {
-                    vm.validate()
-                } label: {
-                    Text("Submit")
-                }
+                Text(vm.validationInfo)
             }
-            Text(vm.validationInfo)
+            
+            HStack {
+                Button {
+                    vm.deactivate()
+                } label: {
+                    Text("Deactivate")
+                }
+                
+                Button {
+                    vm.activate()
+                } label: {
+                    Text("Activate")
+                }
+                
+                Button {
+                    vm.deactivate()
+                } label: {
+                    Text("Validate")
+                }
+
+            }
+            .padding()
+            
             Spacer()
         }
         .frame(width: 500, height: 400, alignment: .leading)
