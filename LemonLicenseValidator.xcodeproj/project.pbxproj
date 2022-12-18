@@ -13,6 +13,7 @@
 		094E6B16294F11E7003B452F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 094E6B15294F11E7003B452F /* Preview Assets.xcassets */; };
 		094E6B1F294F138D003B452F /* NSRegularExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094E6B1E294F138D003B452F /* NSRegularExpression.swift */; };
 		094E6B24294F14D6003B452F /* ContentViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094E6B23294F14D6003B452F /* ContentViewViewModel.swift */; };
+		094E6B26294F1A36003B452F /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094E6B25294F1A36003B452F /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		094E6B17294F11E7003B452F /* LemonLicenseValidator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LemonLicenseValidator.entitlements; sourceTree = "<group>"; };
 		094E6B1E294F138D003B452F /* NSRegularExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSRegularExpression.swift; sourceTree = "<group>"; };
 		094E6B23294F14D6003B452F /* ContentViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewViewModel.swift; sourceTree = "<group>"; };
+		094E6B25294F1A36003B452F /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		094E6B20294F14AB003B452F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				094E6B25294F1A36003B452F /* Models.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				094E6B1F294F138D003B452F /* NSRegularExpression.swift in Sources */,
+				094E6B26294F1A36003B452F /* Models.swift in Sources */,
 				094E6B11294F11E5003B452F /* ContentView.swift in Sources */,
 				094E6B0F294F11E5003B452F /* LemonLicenseValidatorApp.swift in Sources */,
 				094E6B24294F14D6003B452F /* ContentViewViewModel.swift in Sources */,
