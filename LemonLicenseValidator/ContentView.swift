@@ -8,13 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var vm = ContentViewViewModel()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            HStack {
+                TextField("Insert your license key", text: $vm.license)
+                Button {
+                    vm.validate()
+                } label: {
+                    Text("Submit")
+                }
+            }
+            Text(vm.validationInfo)
+            Spacer()
         }
+        .frame(width: 500, height: 400, alignment: .leading)
         .padding()
     }
 }
