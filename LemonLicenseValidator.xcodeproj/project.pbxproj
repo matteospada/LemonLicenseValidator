@@ -13,16 +13,17 @@
 		094E6B16294F11E7003B452F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 094E6B15294F11E7003B452F /* Preview Assets.xcassets */; };
 		094E6B1F294F138D003B452F /* NSRegularExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094E6B1E294F138D003B452F /* NSRegularExpression.swift */; };
 		094E6B24294F14D6003B452F /* ContentViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094E6B23294F14D6003B452F /* ContentViewViewModel.swift */; };
-		094E6B26294F1A36003B452F /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094E6B25294F1A36003B452F /* Models.swift */; };
+		094E6B26294F1A36003B452F /* LemonModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094E6B25294F1A36003B452F /* LemonModels.swift */; };
 		094E6B2B294F1D0F003B452F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094E6B2A294F1D0F003B452F /* Network.swift */; };
 		094E6B2E294F1D2B003B452F /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094E6B2D294F1D2B003B452F /* HTTPMethod.swift */; };
 		094E6B30294F1D48003B452F /* HTTPErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094E6B2F294F1D48003B452F /* HTTPErrors.swift */; };
-		094E6B33294F1D7B003B452F /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094E6B32294F1D7B003B452F /* Endpoint.swift */; };
-		094E6B35294F1D98003B452F /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094E6B34294F1D98003B452F /* HTTPClient.swift */; };
+		094E6B33294F1D7B003B452F /* LemonEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094E6B32294F1D7B003B452F /* LemonEndpoint.swift */; };
+		094E6B35294F1D98003B452F /* LemonClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094E6B34294F1D98003B452F /* LemonClient.swift */; };
 		094E6B37294F1DD3003B452F /* LemonSqueezyEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094E6B36294F1DD3003B452F /* LemonSqueezyEndpoints.swift */; };
-		094E6B3A294F1FF6003B452F /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094E6B39294F1FF6003B452F /* Service.swift */; };
+		094E6B3A294F1FF6003B452F /* LemonSqueezyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094E6B39294F1FF6003B452F /* LemonSqueezyService.swift */; };
 		094E6B3D294F61EC003B452F /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094E6B3C294F61EC003B452F /* LocalState.swift */; };
 		094E6B3F294F631C003B452F /* LicenseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094E6B3E294F631C003B452F /* LicenseType.swift */; };
+		09B0207E2950BC8B000D673E /* LemonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B0207D2950BC8B000D673E /* LemonError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,16 +35,17 @@
 		094E6B17294F11E7003B452F /* LemonLicenseValidator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LemonLicenseValidator.entitlements; sourceTree = "<group>"; };
 		094E6B1E294F138D003B452F /* NSRegularExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSRegularExpression.swift; sourceTree = "<group>"; };
 		094E6B23294F14D6003B452F /* ContentViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewViewModel.swift; sourceTree = "<group>"; };
-		094E6B25294F1A36003B452F /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		094E6B25294F1A36003B452F /* LemonModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonModels.swift; sourceTree = "<group>"; };
 		094E6B2A294F1D0F003B452F /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		094E6B2D294F1D2B003B452F /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		094E6B2F294F1D48003B452F /* HTTPErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPErrors.swift; sourceTree = "<group>"; };
-		094E6B32294F1D7B003B452F /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		094E6B34294F1D98003B452F /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		094E6B32294F1D7B003B452F /* LemonEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonEndpoint.swift; sourceTree = "<group>"; };
+		094E6B34294F1D98003B452F /* LemonClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonClient.swift; sourceTree = "<group>"; };
 		094E6B36294F1DD3003B452F /* LemonSqueezyEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonSqueezyEndpoints.swift; sourceTree = "<group>"; };
-		094E6B39294F1FF6003B452F /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		094E6B39294F1FF6003B452F /* LemonSqueezyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonSqueezyService.swift; sourceTree = "<group>"; };
 		094E6B3C294F61EC003B452F /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		094E6B3E294F631C003B452F /* LicenseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseType.swift; sourceTree = "<group>"; };
+		09B0207D2950BC8B000D673E /* LemonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +111,7 @@
 		094E6B20294F14AB003B452F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				094E6B25294F1A36003B452F /* Models.swift */,
+				094E6B25294F1A36003B452F /* LemonModels.swift */,
 				094E6B3E294F631C003B452F /* LicenseType.swift */,
 			);
 			path = Models;
@@ -147,7 +149,8 @@
 			children = (
 				094E6B2D294F1D2B003B452F /* HTTPMethod.swift */,
 				094E6B2F294F1D48003B452F /* HTTPErrors.swift */,
-				094E6B34294F1D98003B452F /* HTTPClient.swift */,
+				094E6B34294F1D98003B452F /* LemonClient.swift */,
+				09B0207D2950BC8B000D673E /* LemonError.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -155,7 +158,7 @@
 		094E6B31294F1D6A003B452F /* Endoints */ = {
 			isa = PBXGroup;
 			children = (
-				094E6B32294F1D7B003B452F /* Endpoint.swift */,
+				094E6B32294F1D7B003B452F /* LemonEndpoint.swift */,
 				094E6B36294F1DD3003B452F /* LemonSqueezyEndpoints.swift */,
 			);
 			path = Endoints;
@@ -164,7 +167,7 @@
 		094E6B38294F1FDB003B452F /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				094E6B39294F1FF6003B452F /* Service.swift */,
+				094E6B39294F1FF6003B452F /* LemonSqueezyService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -251,15 +254,16 @@
 				094E6B37294F1DD3003B452F /* LemonSqueezyEndpoints.swift in Sources */,
 				094E6B3D294F61EC003B452F /* LocalState.swift in Sources */,
 				094E6B1F294F138D003B452F /* NSRegularExpression.swift in Sources */,
-				094E6B26294F1A36003B452F /* Models.swift in Sources */,
+				094E6B26294F1A36003B452F /* LemonModels.swift in Sources */,
 				094E6B2E294F1D2B003B452F /* HTTPMethod.swift in Sources */,
-				094E6B3A294F1FF6003B452F /* Service.swift in Sources */,
+				094E6B3A294F1FF6003B452F /* LemonSqueezyService.swift in Sources */,
 				094E6B3F294F631C003B452F /* LicenseType.swift in Sources */,
 				094E6B2B294F1D0F003B452F /* Network.swift in Sources */,
 				094E6B11294F11E5003B452F /* ContentView.swift in Sources */,
-				094E6B35294F1D98003B452F /* HTTPClient.swift in Sources */,
+				094E6B35294F1D98003B452F /* LemonClient.swift in Sources */,
 				094E6B0F294F11E5003B452F /* LemonLicenseValidatorApp.swift in Sources */,
-				094E6B33294F1D7B003B452F /* Endpoint.swift in Sources */,
+				09B0207E2950BC8B000D673E /* LemonError.swift in Sources */,
+				094E6B33294F1D7B003B452F /* LemonEndpoint.swift in Sources */,
 				094E6B24294F14D6003B452F /* ContentViewViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

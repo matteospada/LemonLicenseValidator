@@ -8,12 +8,12 @@
 import Foundation
 
 // MARK: HTTPClient
-protocol HTTPClient {
-    func fetchData<T: Decodable>(endpoint: any Endpoint, responseModel: T.Type) async throws -> T
+protocol LemonClient {
+    func fetchData<T: Decodable>(endpoint: any LemonEndpoint, responseModel: T.Type) async throws -> T
 }
 
-extension HTTPClient {
-    func fetchData<T: Decodable>(endpoint: any Endpoint, responseModel: T.Type) async throws -> T {
+extension LemonClient {
+    func fetchData<T: Decodable>(endpoint: any LemonEndpoint, responseModel: T.Type) async throws -> T {
         guard let url = URL(string: endpoint.baseURL + endpoint.path) else {
             throw RequestError.invalidURL
         }
@@ -40,13 +40,17 @@ extension HTTPClient {
         switch response.statusCode {
         case 200...299:
             guard let decodedResponse = try? JSONDecoder().decode(responseModel, from: data) else {
-                throw RequestError.decode
+                throw LemonError.decode
             }
             return decodedResponse
         case 401:
-            throw RequestError.unauthorized
+            throw LemonError.unauthorized
+        case 404:
+            throw LemonError.itemNotFound
+        case 422:
+            throw LemonError.requiredFieldMissing
         default:
-            throw RequestError.unexpectedStatusCode
+            throw LemonError.unexpectedStatusCode
         }
     }
 }

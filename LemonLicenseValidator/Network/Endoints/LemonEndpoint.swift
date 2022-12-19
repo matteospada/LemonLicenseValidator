@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: Endpoint
-protocol Endpoint {
+protocol LemonEndpoint {
     var baseURL: String { get }
     var path: String { get }
     var method: HTTPMethod { get }

@@ -13,7 +13,7 @@ enum LemonSqueezyEndpoints {
     case deactivate([String: Any]?)
 }
 
-extension LemonSqueezyEndpoints: Endpoint {
+extension LemonSqueezyEndpoints: LemonEndpoint {
     
     var baseURL: String {
         return "https://api.lemonsqueezy.com"

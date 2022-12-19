@@ -17,7 +17,7 @@ protocol manageLicense {
     func deactivate(licenseKey: String, instanceId: String) async throws -> DeactivatedModel
 }
 
-struct LemonSqueezyService: HTTPClient, manageLicense {
+struct LemonSqueezyService: LemonClient, manageLicense {
     func activate(licenseKey: String, instanceName: String) async throws -> ActivateModel {
         let body = ["license_key": licenseKey, "instance_name": instanceName]
         let res = try await fetchData(endpoint: LemonSqueezyEndpoints.activate(body), responseModel: ActivateModel.self)

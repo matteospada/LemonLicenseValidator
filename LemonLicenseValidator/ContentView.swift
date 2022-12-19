@@ -32,7 +32,7 @@ struct ContentView: View {
                 }
                 
                 Button {
-                    vm.deactivate()
+                    vm.validate()
                 } label: {
                     Text("Validate")
                 }
